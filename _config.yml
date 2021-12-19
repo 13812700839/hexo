@@ -10,13 +10,15 @@ description: ''
 keywords: 后端, 前端
 author: Pengcc
 language: zh-CN
+# language: en
 timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://13812700839.github.io
-permalink: :year/:month/:day/:title/
+permalink: :category/:year/:month/:day/:post_title/
 permalink_defaults:
+  lang: en
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
@@ -69,7 +71,14 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  前端: front-end
+  后端: bak-end
+  版本控制: versionControl
+  其他: other
 tag_map:
+  Java: java
+  Python: python
+  Vue: vue
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -104,3 +113,13 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+# - type: git
+#   repo: 
+#     github: git@github.com:13812700839/selfhexo.git
+#     gitee: git@gitee.com:pengchangchao/hexo.git
+#     coding: git@e.coding.net:huashanghun/selfproject/hexo.git
+#     # gitcafe: https://gitcafe.com/pengloo53/pengloo53.git
+#   branch: main
+  # type: heroku
+  # repo: https://git.heroku.com/pengcc.git
+  # branch: main
