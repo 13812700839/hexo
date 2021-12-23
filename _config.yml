@@ -15,8 +15,10 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://13812700839.github.io
-permalink: :category/:year/:month/:day/:post_title/
+# url: https://13812700839.github.io
+url: http://10.10.216.58:4000
+root: /
+permalink: :category/:year/:month/:day/:title-:hash/
 permalink_defaults:
   lang: en
 pretty_urls:
@@ -74,6 +76,9 @@ category_map:
   前端: front-end
   后端: bak-end
   版本控制: versionControl
+  Windows软件安装配置: WindowsSoftwareInstallAndConfig
+  数据库: database
+  中间件: middleware
   其他: other
 tag_map:
   Java: java
@@ -107,7 +112,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape-plus
+theme: volantis
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
