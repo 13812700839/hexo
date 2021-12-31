@@ -73,10 +73,10 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
-  前端: front-end
-  后端: bak-end
+  前端: frontEnd
+  后端: bakEnd
   版本控制: versionControl
-  Windows软件安装配置: WindowsSoftwareInstallAndConfig
+  Windows软件安装配置: windowsSoftware
   数据库: database
   中间件: middleware
   其他: other
@@ -117,7 +117,9 @@ theme: volantis
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repo: root@47.100.225.227:/opt/hexo-blog/hexo.git
+  branch: master
 # - type: git
 #   repo: 
 #     github: git@github.com:13812700839/selfhexo.git
